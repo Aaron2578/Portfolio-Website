@@ -256,7 +256,7 @@ section .button button {
 }
 section .button button:hover {
   border-color: #03e5fa;
-  background-color: #fff;
+/*   background-color: #fff; */
   color: #03e5fa;
 }
 
