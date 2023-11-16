@@ -438,7 +438,7 @@ footer .text span a:hover {
   }
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
   nav .navbar {
     width: 90%;
   }
