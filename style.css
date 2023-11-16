@@ -58,7 +58,7 @@ nav .navbar .menu {
 }
 nav .navbar .menu li {
   list-style: none;
-  margin: 0 8px;
+  margin: 0 30px;
 }
 .navbar .menu a {
   font-size: 18px;
@@ -469,6 +469,18 @@ footer .text span a:hover {
   }
   nav .navbar .media-icons {
     display: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  nav .navbar .media-icons a {
+    padding: 10px;
+  }
+  .menu-btn{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
   }
   nav .menu-btn,
   .navbar .menu .cancel-btn {
