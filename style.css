@@ -421,6 +421,9 @@ footer .text span a:hover {
   box-shadow: rgba(0, 0, 0, 0.15);
   display: none;
 }
+.soc-med>div>a>i {
+  color: red;
+}
 .soc-med {
   margin: auto;
   width: 50%;
@@ -432,14 +435,16 @@ footer .text span a:hover {
   font-size: 20px;
 }
 .soc-med>div {
-margin: 8px;
+margin: 15px;
 }
 .soc-med>div>a:hover {
   color: red;
+  font-weight: bold;
 }
 .contact {
   display: flex;
 }
+
 
 /* Responsive Media Query */
 @media (max-width: 1190px) {
@@ -450,17 +455,38 @@ margin: 8px;
     display: flex;
     flex-direction: column;
   }
-  .soc-med>div>a>i>span{
+  .spc{
     display: none;
     /* display: flex; */
     flex-direction: row;
   }
+  @keyframes socio {
+    0% {color: #000;}
+    25% {color: rgb(130, 168, 238);}
+    50% {color: rgb(115, 255, 0);}
+    75% {color: rgb(255, 123, 0);}
+    100% {color: rgb(52, 53, 48);}
+  }
   .soc-med {
-    width: 100%;
+    width: 60%;
     margin: auto;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
+  }
+  .soc-med>div>a>i {
+    color: red;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    animation-name: socio;
+    animation-duration: 19s;
+    animation-iteration-count: infinite;
   }
 }
 @media (max-width: 1000px) {
