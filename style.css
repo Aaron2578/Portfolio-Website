@@ -375,9 +375,14 @@ section .button button:hover {
 .services .boxes .box:hover p {
   color: #fff;
 }
+/* .topic {
+  display: flex;
+  align-items: center;
+
+} */
 /* Contact Me CSS */
 .contact {
-  background: #f0f8ff;
+  background: #ffffff;
 }
 .contact .content {
   margin: 0 auto;
