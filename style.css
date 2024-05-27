@@ -8,6 +8,11 @@
   scroll-behavior: smooth;
 }
 
+:root {
+  --first-bg-dark:#f0f8ff;
+  --project-bg:#97d6fb;
+}
+
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
   width: 10px;
@@ -451,16 +456,50 @@ section .button button:hover {
   text-decoration: none;
 }
 /* Contact Me CSS */
-.contact .content {
+.contact {
+  display: flex;
+  justify-content: space-between;
+}
+/* .contact .content {
   margin: 0 auto;
   padding: 30px 0;
-}
+}*/
 .contact .text {
-  width: 80%;
-  text-align: center;
-  margin: auto;
-}
+  /* width: 50%;
+  text-align: center; */
+  display: flex;
+  justify-content: center;
+  width: 100%;
 
+} 
+.msg .email .name{
+  display: flex;
+  flex-direction: column;
+}
+.feedback>form>div>div>input,textarea{
+  width: 400px;
+  border-radius: 10px;
+  padding: 5px;
+}
+.feedback>form>div>div>label{
+ font-size: 20px;
+ font-weight: 500;
+}
+.feedback>form>div>div>label>span {
+  color: red;
+}
+.form-btn {
+  outline: none;
+  padding: 6px 13px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 800;
+  background: #03e5fa;
+  color: #000;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
 /* Footer CSS */
 footer {
   background: #03e5fa;
@@ -513,9 +552,52 @@ margin: 15px;
   color: red;
   font-weight: bold;
 }
-.contact {
-  display: flex;
+
+/* thanks starts */
+.thanks{
+  background-color: var(--first-bg-dark);
+  height: 100vh;
 }
+
+.thanks-wrapper>div>div{
+  max-width: 500px;
+  margin:20px auto;
+}
+
+.thanks-wrapper>div>div>img{
+  width: 100%;
+  border-radius: 50px;
+}
+
+.thanks-wrapper>.text-center h2{
+  margin-top: 20px;
+  font-size: 35px;
+  font-family: cursive;
+}
+.thanks-wrapper>.text-center h5 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-family: cursive;
+}
+.text-center span {
+  outline: none;
+  padding: 6px 13px;
+  border-radius: 20px;
+  font-size: 15px;
+  font-weight: 800;
+  background: #03e5fa;
+  color: #000;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.thanks-wrapper>.text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* thank ends */
 
 
 /* Responsive Media Query */
@@ -667,6 +749,9 @@ margin: 15px;
     font-family: "Poppins", sans-serif;
     font-size: 20px;
   }
+  .project-wrapper>.project:nth-child(2)>.project-inwrapper{
+    flex-direction: column-reverse;
+  }
   .pleft>img {
     width:100%;
     height: auto;
@@ -674,9 +759,22 @@ margin: 15px;
   .pbutton {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
+    height: 100px;
   }
   .contact .text {
-    width: 100%;
+    width: 80%;
+    margin: auto;
+  }
+
+  .thanks-wrapper>.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+  }
+  .thanks-wrapper>.text-center>h2 {
+    text-align: center;
   }
 }
 
