@@ -759,6 +759,7 @@ margin: 15px;
   .pbutton {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: column;
     height: 100px;
   }
