@@ -752,6 +752,9 @@ margin: 15px;
   .project-wrapper>.project:nth-child(2)>.project-inwrapper{
     flex-direction: column-reverse;
   }
+  .project-wrapper>.project:nth-child(4)>.project-inwrapper{
+    flex-direction: column-reverse;
+  }
   .pleft>img {
     width:100%;
     height: auto;
